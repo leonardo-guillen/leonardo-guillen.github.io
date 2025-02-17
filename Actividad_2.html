@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mis respuestas</title>
+        <style>
+            div {
+                background-color: blanchedalmond;
+            }
+
+            .titles{
+                display: grid;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .question{
+                font-family: fantasy;
+            }
+
+            .left{
+                display: flex;
+                justify-content: left;
+            }
+
+            .center{
+                display: flex;
+                justify-content: center;
+                padding: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="HTML">
+            <h1 class="titles">1.HTML</h1>
+            <section>
+                <h2 class="titles">Introduction</h2>
+                <article class="left">
+                    <h4 class="question">
+                        What is HTML?
+                    </h4>
+                    <p>
+                        HTML es un lenguaje de hipertexto, maneja un etiquetado que nos permite enmaquetar o encapsular el contenido de nuestra 
+                        página web en elementos a los cuales podremos agregarles una configuración visual con CSS. 
+                    </p>
+                </article>
+
+                <article style="display: grid; grid-template-columns: repeat(1, 1fr);">
+                    <h4 class="question" style="display: flex; justify-content: center; background-color: aqua;">
+                        Explain the head and the body tags.
+                    </h4>
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: larger; display: flex; justify-content: flex-end;">
+                        La etiqueta head tiene la particularidad de contener las cosas que no se mostraran visualmente en la página, tales como los metadatos, estilos 
+                        o enlaces a archivos externos como el CSS. Por otro lado, el body contiene todo lo que se mostrara en nuestra página web de forma visual.
+                    </p>
+                </article>
+
+                <h2 style=" display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large; justify-content: right; background-color: azure;">
+                    Basic Tags
+                </h2>
+
+                <article style="display: grid; grid-template-columns: repeat(1, 1fr);">
+                    <h4 class="question">
+                        Explain the section, article, aside, header, footer tag?
+                    </h4>
+                    <aside>
+                        <p>
+                            - section: La etiqueta section es un elemento más general, el cual es de ayuda para cuando no tenemos un elemento específico 
+                            el cual pueda ayudarnos a representar algo, tal como un bloque general para el cual podríamos utilizar div, o 
+                            para una muestra de texto donde en tal caso podría ser utilizado span. 
+                            Por lo tanto, section lo tenemos para representar elementos más pequeños y específicos a los que podría 
+                            representar un div.<br/>
+                            - article: La etiqueta article es de ayuda para mostrar información auto-contenida, que es la forma de representar contenido 
+                            repetitivo, tal como las tarjetas de representación de productos en una imagen o las tarjetas de representación de un 
+                            mensaje, donde se representa un contenido distinto, pero se utiliza para representarlo con la misma UI por así decirlo.<br/>
+                            - aside: La etiqueta aside tenemos dos formas principales de utilizarla, primeramente dentro de un article, la cual tendrá 
+                            que encapsular elementos específicos los cuales estén relacionados con el mismo article. 
+                            Por otro lado, es posible colocarlo dentro del propio body donde con ella representaremos contenido o elementos secundarios.<br/>
+                            - header: La etiqueta header se utiliza para colocarla al inicio de las etiquetas que se utilizan para representar contenido 
+                            importante, ya que se colocan en la parte superior para colocar elementos tales como un menú o similar.<br/>
+                            - footer: La etiqueta footer es prácticamente lo mismo que la etiqueta header, pero de forma contraria, es más utilizada 
+                            para ser colocada al final de nuestra página web y representar la información de contacto, derechos reservados o similares.<br/>
+                        </p>
+                        <span class="center" style="background-color: aquamarine;">
+                            Lo mencionado anteriormente sobre cada etiqueta es el uso recomendable y sobre todo considerado buenas prácticas, 
+                            evidentemente se podrían utilizar para otras cosas, pero el implementarlo como es mencionado es 
+                            parte de tener buenas prácticas y un código más ordenado y entendible.
+                        </span>
+
+                    </aside>
+                </article>
+
+                <article style="display: grid; grid-template-columns: repeat(1, 1fr);">
+                    <h4 class="question">
+                        Create an unordered list. Create an ordered list.
+                    </h4>
+                    
+                    <aside>
+                        <ol>
+                            <li>Primer elemento de la lista ordenada</li>
+                            <li>Segundo elemento de la lista ordenada</li>
+                            <li>Tercer elemento de la lista ordenada</li>
+                        </ol>
+
+                        <ul>
+                            <li>Primer elemento de la lista desordenada</li>
+                            <li>Segundo elemento de la lista desordenada</li>
+                            <li>Tercer elemento de la lista desordenada</li>
+                        </ul>
+                    </aside>
+                </article>
+
+                <article style="display: grid; grid-template-columns: repeat(1, 1fr);">
+                    <h4 class="question">
+                        Create a basic table using html.
+                    </h4>
+                    <aside class="center">
+                        <table style="margin: 5%; border: 1px solid black;">
+                            <tr>
+                                <th>Mascota</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                            </tr>
+                            <tr>
+                                <td>Gato</td>
+                                <td>Pepe</td>
+                                <td>Durmiendo</td>
+                            </tr>
+                            <tr>
+                                <td>Perro</td>
+                                <td>Chucks</td>
+                                <td>Despierto</td>
+                            </tr>
+                        </table>
+                    </aside>
+                </article>
+            </section>
+        </div>
+
+        <div id="CSS">
+            <section>
+                <h1 class="titles center">2.CSS</h1>
+                <h2 class="center">Introduction</h2>
+                <article>
+                    <h3 class="question">What is CSS?</h3>
+                    <p>
+                        CSS es conocido por darnos la capacidad de agregar estilos a nuestras páginas y es considerado como una hoja de estilos 
+                        de cascada, lo cual hace referencia a que los estilos que coloquemos en una etiqueta de html, algunos de estos son traspasados 
+                        a las etiquetas dentro de esta, por ende se considera como una formación de cascada.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="question">What is the purpose of CSS?</h3>
+                    <p class="center">
+                        El propósito de CSS es permitirnos crear reglas para indicar como queremos mostrar el contenido de nuestra página web, 
+                        de tal manera que mediante formatos específicos podremos representar toda nuestra información de una mejor forma visualmente.
+                    </p>
+                </article>
+
+                <article>
+                    <h3 class="question">How do you apply a CSS to an HTML (explain the 3 options)</h3>
+                    <aside>
+                        <p>Las tres formas que yo conozco para aplicar el CSS en nuestra página son:</p>
+                        <ul>
+                            <li>
+                                Enlazar un archivo con extensión CSS, el cual suele contener la referencia hacia los ID, etiquetas o construcción de clases.
+                            </li>
+                            <li>
+                                Agregar el estilo directamente en el head con la etiqueta style.
+                            </li>
+                            <li>
+                                Agregar los estilos directamente a cada etiqueta con el atributo style.
+                            </li>
+                        </ul>
+                    </aside>
+                </article>
+
+                <article>
+                    <h3 class="question">What is a selector? What is a CSS rule?</h3>
+                    <aside style="padding: 10px;">
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>CSS rule</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    El selector en CSS es el que nos da la posibilidad de asignar reglas a todos los elementos del mismo tipo dentro 
+                                    de la página, si lo hacemos referenciando a p (p{}), lo que estariamos haciendo es asignar propiedades de 
+                                    CSS a todas las etiquetas de párrafo en nuestra página.
+                                </td>
+                                <td>
+                                    Una regla en CSS es la definición de como se mostraran los elementos de nuestra página web con las propiedades 
+                                    de estilo, estas se consiguen de tal manera que se hace referencia a alguna etiqueta con el selector, id o se crea 
+                                    una clase la cual contendrá las propiedades de estilo.
+                                </td>
+                            </tr>
+                        </table>
+                    </aside>
+                </article>
+
+                <article>
+                    <h3 class="question">
+                        Play the 32 levels of <a href="https://flukeout.github.io/">https://flukeout.github.io/</a>
+                    </h3>
+                    <aside style="display: flex; justify-content: center;">
+                        <img src="images_act_2/CSS_practice.PNG" alt="Prueba del nivel 32 jugado." width="500" />
+                    </aside>
+                </article>
+
+                <article>
+                    <h3 class="question">
+                        Play the 24 levels of <a href="https://flexboxfroggy.com/" style="text-decoration: none;">https://flexboxfroggy.com/</a>
+                    </h3>
+                    <aside style="display: flex; justify-content: flex-end;">
+                        <img src="images_act_2/CSS_practice2.PNG" alt="Prueba del nivel 24 jugado." width="500" />
+                    </aside>
+                </article>
+            </section>
+
+            <section>
+                <h2 class="title">Basic CSS</h2>
+                <article>
+                    <h3 class="question">Explain a:</h3>
+                    <ul>
+                        <li>
+                            <h4>Tag <strong>Selector</strong></h4>
+                            <p>
+                                El selector en CSS nos permite hacer referencia a etiquetas html de forma 
+                                general, si lo hacemos para la etiqueta <strong>p</strong>, se aplicará el estilo a todas las etiquetas <strong>p</strong> 
+                                dentro de la página.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>class <strong>Selector</strong></h4>
+                            <p>
+                                El selector de clase hará referencia a todos los elementos que tengan la misma clase dentro del atributo 
+                                <strong>class</strong> en html, en CSS a estos se les hace referencia con un punto antes del nombre 
+                                de la clase para poder aplicar los estilos <strong>.class</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Tag and class <strong>Selector</strong></h4>
+                            <p>
+                                El hacer referencia a la etiqueta y a la clase a la vez nos permite ser más específicos con la selección de 
+                                un elemento, podremos tener 50 etiquetas div, pero si solo una tiene la clase a la que se hace 
+                                referencia, solo serán aplicados los estilos a ese div.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Id <strong>Selector</strong></h4>
+                            <p>
+                                El selector de Id nos permite ser mucho más específicos, ya que el ID es único en cada elemento si este es colocado. 
+                                No puede ser repetido y por ende al aplicar el selector por ID solo hacemos referencia a un elemento para aplicar los estilos.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3 class="question">What is a class? What is an id? How are they related to CSS?</h3>
+                    <p>
+                        Una clase nos permite crear una serie de estilos de forma general para reutilizar en 
+                        distintos elementos de la página mediante el atributo class en html, mientras que en CSS se crean con un punto al inicio.
+                    </p>
+                    <p>
+                        El ID es un atributo en html el cual se le asigna a una etiqueta y su contenido tendrá que ser único para 
+                        cada elemento, de esta manera se podrá hacer referencia a un elemento específico desde CSS para aplicarle estilos.
+                    </p>
+                    <p>
+                        En CSS podríamos relacionarlos de dos formas, primeramente es que ambas nos sirven para ser más específicos al momento 
+                        de darle estilos a elementos de nuestra página, pero además se pueden mezclar para seleccionar elementos que tengan 
+                        su ID dado y que además tengan la clase dada.
+                    </p>
+                </article>
+
+                <article>
+                    <h3 class="question">Explain the CSS Box Model? Show an example.</h3>
+                    <aside>
+                        <p>
+                            El CSS Box Model consiste en la representación de como funcionara el contenido que coloquemos, 
+                            ya que nosotros podremos modificar el margen, padding y borde. Para entender esto tendremos que 
+                            tener en cuenta que el padding es un espaciado que se aplicará a partir del borde hacia adentro, reduciendo 
+                            el espacio total que tiene nuestro contenido. El margen es un espaciado en la parte de afuera de nuestro elemento 
+                            y nuestro borde se encuentra entre ambos, de la siguiente manera:
+                        </p>
+                        <img src="images_act_2/CSSBoxModel.PNG" alt="CSS Box Model example" width="500" />
+                    </aside>
+                </article>
+
+                <article style="background-color: black; color: #FFFFFF">
+                    <h3 class="question">How can you change the font color using CSS?</h3>
+                    <p>
+                        El color del texto se cambia con el estilo "color" de CSS, donde podremos asignar el color en formato rgb o en hexadecimal.
+                    </p>
+                </article>
+                <article>
+                    <h3>Create an html challenge</h3>
+                    <a href="https://leonardo-guillen.github.io/misupertareaupdate.html">Mi wikileaks update</a>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
