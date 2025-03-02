@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interacción con el API</title>
+        <style>
+            html, body{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            .container{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: gray;
+            }
+
+            .images{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .img{
+                margin: 5px;
+            }
+
+            #Spotify, #Deepseek{
+                padding: 10px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 35;
+            }
+
+            #title{
+                font-family: monospace;
+                font-size: 100;
+                background-color: #222222;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="title">
+                <h1>Actividad #3: Interacción con el API</h1>
+            </div>
+            <div id="Spotify">
+                <h2>
+                    Peticiones a Spotify para extraer nuestro top 20 de canciones
+                </h2>
+                <p>
+                    Se gestionó todo con fetch, permitiéndonos realizar las solicitudes de forma asíncrona para recibir los datos encapsulados 
+                    de forma correcta en un tipo de dato JSON, donde podemos acceder y mostrar la info en nuestra web con mayor facilidad.
+                </p>
+                <div class="images">
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/1.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/2.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/3.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/4.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/5.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="250" src="./EvidenciaSpotify/6.PNG" />
+                </div>
+            </div>
+            <div id="Deepseek">
+                <h2>
+                    Peticiones a DeepSeek con el API para poder realizar un chat en una web propia.
+                </h2>
+                <p>
+                    Peticiones al API de DeepSeek, permitiéndonos realizar un chat con la IA asignando un rol específico con el 
+                    cual responder, en este caso se le ha asignado el rol de chef profesional, por lo que todo lo responde como 
+                    si lo preguntáramos a un chef.
+                </p>
+                <div class="images">
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="700" src="./EvidenciaAPIDeepSeek/1.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="700" src="./EvidenciaAPIDeepSeek/2.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="700" src="./EvidenciaAPIDeepSeek/3.PNG" />
+                    <img class="img" alt="Evidencia de la web con el top de las canciones" width="700" src="./EvidenciaAPIDeepSeek/4.PNG" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
