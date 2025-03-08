@@ -189,6 +189,7 @@ import fs from 'fs';
             </style>
           </head>
           <body style="display: flex; flex-direction: column; align-items: center;">
+          <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="A new image" width=200/>
             <h1>Responde con tu opinion despues de leer el <a href="https://www.aljazeera.com/opinions/2019/3/13/digital-colonialism-is-threatening-the-global-south">articulo</a></h1>
 
             <div>
@@ -260,6 +261,7 @@ import fs from 'fs';
       //Escribe el nombre completo y una cualidad que valores en esa persona de tu equipo
       //Trata de agregar una imagen a opinion.html
       //Explica si la puedes ver, en caso negativo ¿qué crees que pase?
+      // Si agrego la imagen funciona sin problemas, el caso negativo dependera de como se intente agregar o si esta mal colocado
 
       //Agrega una ruta /opinion
       //Haz una página opinion.html
