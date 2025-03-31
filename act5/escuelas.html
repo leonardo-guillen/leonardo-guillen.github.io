@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escuelas</title>
+    <meta charset="UTF-8">
+</head>
+<body style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+    <h1>Lista de escuelas</h1>
+   
+    <a href="/">Bienvenida</a>
+
+    <script>
+        async function obtenerEscuelas() {
+            //Agregar el url adecuado
+          const listaEscuelas = await fetch("/api/escuelas");
+          const jsonLE = await listaEscuelas.json();
+          console.log(jsonLE);
+          //Muestra las escuelas en el html
+
+          for(let element of Object.values(jsonLE)){
+            console.log(element);
+            let container = document.createElement('div');
+            let newElement1 = document.createElement('p');
+            let newElement2 = document.createElement('p');
+            let textName = document.createTextNode(`Nombre: ${element['nombre']}`);
+            let textDir = document.createTextNode(`Direccion: ${element['direccion']}`);
+
+            container.setAttribute('style', 'display:flex; align-items: center; background-color: gray; padding: 15px; flex-direction: column; margin: 20px; width: 80%;');
+
+            newElement1.appendChild(textName);
+            newElement2.appendChild(textDir);
+
+            container.appendChild(newElement1);
+            container.appendChild(newElement2);
+            document.body.appendChild(container);
+          }
+
+        }
+        obtenerEscuelas();
+    </script>
+</body>
+</html>
